@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   
-  base:"/week1"
+  base:"/week1",
   plugins: [react()],
 });
