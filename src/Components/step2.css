@@ -1,0 +1,214 @@
+.step2-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh; /* Full height */
+    width: 100vw; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .spotify2-icon {
+    font-size: 120px; /* Increased the size */
+    color: #1DB954; /* Spotify green color */
+    margin-bottom: 20px; /* Space below the icon */
+    position: relative;
+    top: 0; /* Ensure the icon is not moved up */
+  }
+  
+/* Ensure the progress bar container has a defined height and width */
+.progress-bar2 {
+    width: 100%; /* Adjust width as needed */
+    max-width: 600px; /* Maximum width */
+    height: 2px; /* Set height to 2px */
+    background-color: #ddd; /* Background color of the bar */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the progress bar */
+  }
+  
+    .progress-bar-fill2 {
+        height: 100%; /* Fill the entire height */
+        background-color: #4CAF50; /* Progress bar fill color */
+        border-radius: 5px; /* Rounded corners */
+    }
+  
+  .step-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .step-indicator img.back-arrow {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    margin-right: 10px;
+  }
+  
+  .step-indicator span {
+    font-size: 15px;
+    font-weight: bold; /* Make the font bold */
+    font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+    color: white;
+  }
+  
+  .step2 {
+    font-size: 20px; /* Adjust the size as needed */
+    font-weight: normal; /* Ensure the font is not bold */
+    font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+    color: dimgray;
+  }
+  
+  .user-info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* border: 1px solid #ccc; Example border */
+    border-radius: 5px; /* Example border radius */
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin-top: 20px; /* Space below the "Step 2" text */
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group .form-info {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .dob-inputs {
+    width:600px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dob-inputs input,
+  .dob-inputs select {
+    width: 30%;
+  }
+  
+  .gender-options {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .gender-options label {
+    margin-bottom: 5px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #1ed760;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #1db954;
+  }
+  
+  #message {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .step2-container {
+      padding: 10px;
+      font-size: 10px; /* Set font size to 10px for all elements within .step2-container */
+    }
+  
+    .spotify-icon {
+      font-size: 80px; /* Adjust the size for smaller screens */
+      top: 0; /* Ensure the icon is not moved up */
+    }
+  
+    .progress-bar {
+      width: 100%; /* Full width on smaller screens */
+      max-width: 100%; /* Remove max-width constraint */
+    }
+  
+    .step-indicator {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .step-indicator img.back-arrow {
+      width: 20px; /* Adjust the size as needed for smaller screens */
+      height: 20px; /* Adjust the size as needed for smaller screens */
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .step-indicator span {
+      font-size: 10px; /* Ensure span font size is also 10px */
+      font-weight: bold; /* Ensure the font is bold */
+      font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+    }
+  
+    .step2 {
+      font-size: 10px; /* Adjust the size as needed for smaller screens */
+      font-weight: normal; /* Ensure the font is not bold */
+      font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+    }
+  
+    .user-info-form {
+      padding: 10px;
+      font-size: 10px; /* Set font size to 10px for all elements within .user-info-form */
+      max-width: 100%; /* Ensure it takes full width on smaller screens */
+    }
+  
+    .form-group label {
+      font-size: 12px;
+    }
+  
+    .form-group .form-info {
+      font-size: 10px;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group select {
+      padding: 8px;
+    }
+  
+    .dob-inputs input,
+    .dob-inputs select {
+      width: 30%;
+    }
+  
+    .submit-button {
+      padding: 8px 16px;
+    }
+  
+    #message {
+      font-size: 12px;
+    }
+  }

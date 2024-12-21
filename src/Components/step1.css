@@ -1,0 +1,241 @@
+.step1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh; /* Full height */
+}
+.spotify-icon {
+  font-size: 50px; /* Adjust the size as needed */
+  color: #1DB954; /* Spotify green color */
+  margin-bottom: 20px; /* Space below the icon */
+  margin-bottom: 20px; /* Space below the icon */
+  position: relative;
+  top: -10px; /
+}
+.progress-bar {
+  width: 100%; /* Adjust width as needed */
+  max-width: 500px; /* Maximum width */
+  height: 2px;
+  background-color: #ddd; /* Background color of the bar */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 20px; /* Space below the progress bar */
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #4CAF50; /* Progress bar fill color */
+  border-radius: 5px;
+}
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+  margin-bottom: -30px;
+}
+
+.step-indicator img.back-arrow {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
+position: relative;
+  left:-100px;
+  top:-10px;
+}
+
+.step-indicator span {
+  font-size: 15px;
+  font-weight: bold; /* Make the font bold */
+  font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+  color: white;
+}
+
+.step1 {
+  font-size: 20px; /* Adjust the size as needed */
+  font-weight: normal; /* Ensure the font is not bold */
+  font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+  color: dimgray;
+  position: relative;
+  left:-95px;
+}
+
+.pwd-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  
+  border-radius: 5px; /* Example border radius */
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  margin-top: 20px; /* Space below the "Create a password" text */
+}
+
+.pwd-container h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pwd-container label {
+  font-size: 15px;
+  margin-bottom: 5px;
+  left:-120px;
+  position: relative;
+}
+
+.password-input-container {
+  position: relative;
+  width: 90%;
+}
+
+.password-input-container input[type="password"],
+.password-input-container input[type="text"] {
+  width: 90%;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-input-container i {
+  position: absolute;
+  right: 20px; /* Move more to the left */
+  top: 40%; /* Move slightly to the top */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.pwd-container button {
+  padding: 10px 80px;
+  background-color: #1ed760;
+  color:black;
+  font-weight: 1000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  top:170px;
+}
+
+.pwd-container button:hover {
+  background-color: #1db954;
+}
+
+.pwd-container p {
+  font-size: 14px;
+  color:white;
+}
+.pwd-container #message {
+  position: relative;
+  top: 170px;
+  font-size: 14px;
+  color:white;
+}
+.pwd-guidelines p{
+color:white;
+font-weight: bold;
+}
+.pwd-guidelines {
+  color: white; /* Set the text color to white */
+  font-size: 14px; /* Set the font size to 14px */
+  position: relative; /* Position the text relative to its normal position */
+  top:-90px;
+}
+
+.showPassword {
+  margin-left: 2px;
+  margin-top: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .step1-container {
+    padding: 10px;
+    font-size: 10px; /* Set font size to 10px for all elements within .step1-container */
+  }
+  .spotify-icon {
+    font-size: 42px; /* Adjust the size for smaller screens */
+  
+  top: -8px; 
+ 
+  }
+  .progress-bar {
+    top:-50px;
+
+    position: relative;
+    width: 400px; /* Full width on smaller screens */
+    max-width: 100%; /* Remove max-width constraint */
+  }
+
+  .step-indicator {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step-indicator img.back-arrow {
+    width: 24px; /* Adjust the size as needed for smaller screens */
+    height: 24px; /* Adjust the size as needed for smaller screens */
+    margin-left: -100px;
+    margin-bottom: 10px;
+  }
+
+  .step-indicator span {
+    font-size: 15px; /* Ensure span font size is also 10px */
+    font-weight: bold; /* Ensure the font is bold */
+    font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+  }
+
+  .step1 {
+    margin-top:-40px;
+    margin-left:-70px;
+    font-size: 20px; /* Adjust the size as needed for smaller screens */
+    font-weight: normal; /* Ensure the font is not bold */
+    font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+  }
+
+  .pwd-container {
+    padding: 10px;
+    font-size: 10px; /* Set font size to 10px for all elements within .pwd-container */
+    max-width: 100%; /* Ensure it takes full width on smaller screens */
+  }
+
+  .pwd-container h1 {
+    font-size: 14px;
+  }
+
+  .pwd-container label {
+    font-size: 12px;
+    position: relative;
+    left:-150px;
+  }
+
+  .password-input-container input[type="password"],
+  .password-input-container input[type="text"] {
+    padding: 8px ;
+  }
+
+  .password-input-container i {
+    right: 30px;
+  }
+
+  .pwd-container button {
+    padding: 8px 56px;
+    position: relative;
+    top:130px;
+  }
+
+  .pwd-container p {
+    font-size: 12px;
+  }
+  .pwd-guidelines{
+    position: relative;
+    top:-80px;
+  }
+  .pwd-container #message{
+    position: relative;
+    top:150px;
+  }
+  
+}

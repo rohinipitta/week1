@@ -1,0 +1,261 @@
+
+
+.container {
+  background-color: #121212;
+  color: white; /* Ensure text is visible on black background */
+  width: 100vw;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: -50px;
+}
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+      margin-top: -30px;
+  }
+
+}
+/* sign_up container */
+.sign-container {
+  
+  color: white; /* Ensure text is visible on white background */
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  /* border: 2px solid green; Specify border style and width */
+}
+@media (max-width: 600px) {
+  .sign-container {
+    padding: 15px;
+    min-height: 400px;
+  }
+}
+/* Spotify logo */
+.spotify-icon {
+  font-size: 52px; /* Adjust the size as needed */
+  color: #1DB954; /* Spotify green color */
+  margin-bottom: 20px; /* Space below the icon */
+  position: relative;
+  top:50px;
+}
+@media (max-width: 600px) {
+  .spotify-icon {
+    font-size: 40px; /* Adjust the size for smaller screens */
+   top:30px;
+  }
+}
+
+/* Title styling */
+.signup-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .signup-title {
+    font-size: 2em;
+  }}
+
+
+.encore-text {
+  font-family: 'Arial', sans-serif; /* Example font family */
+  font-weight: normal; /* Example font weight */
+}
+
+.encore-text-title-large {
+  font-size: 50px; /* Example font size */
+  font-weight: bold; /* Example font weight */
+  line-height: 1.2; /* Example line height */
+  font-family: sans-serif; /* Use sans-serif font for h1 */
+}
+
+.small-text {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .small-text {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+.phone-number {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: -14px;
+  left:4px;
+  text-decoration: underline; /* Underline the text */
+  color: green; /* Make it look like a link */
+  cursor: pointer; /* Change cursor to pointer */
+  display: block; /* Ensure it takes up the full width */
+  position: relative; /* Adjust positioning as needed */
+}
+
+@media (max-width: 600px) {
+  .phone-number {
+    left:-55px;
+    text-align: center;
+    position: relative;
+
+  }
+}
+
+.phone-number:hover{
+  color:green;
+  
+}
+/* Form Styles */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  /* margin-bottom: 15px; */
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #444444;
+  border-radius: 5px;
+  background-color:black;
+  color: green;
+}
+
+input::placeholder {
+  color: #999999;
+}
+
+.submit-button {
+  background-color: #1db954; /* Spotify Green */
+  width:300px;
+  color: black;
+  border: none;
+  margin-left:10px;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #1ed760;
+}
+/* line  */
+/*google-container*/
+.line-container {
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  margin: 20px 0;
+  width: 100%; /* Ensure the container takes full width */
+}
+
+.line-container .line {
+  flex: 1;
+  height: 1px;
+  background-color: #666;
+}
+
+.line-container .or {
+  padding: 0 10px;
+  color: #666;
+  font-weight: bold;
+  white-space: nowrap; /* Ensure the text does not wrap */
+}
+@media (max-width: 600px) {
+  .line-container .or {
+    font-size: 0.9em;
+  }
+}
+/*lower butons*/
+/* Common button styles */
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  border-radius: 25px; /* Adjust as needed */
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-button img {
+  width: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.google-container {
+  background-color:black; /* Google blue color */
+}
+
+.google-container:hover {
+  background-color:black; /* Slightly darker on hover */
+}
+
+.facebook-container {
+  background-color: black; /* Facebook blue color */
+}
+
+.facebook-container:hover {
+  background-color: black;/* Slightly darker on hover */
+}
+
+.apple-container {
+  background-color: #000; /* Black background for Apple */
+}
+
+.apple-container:hover {
+  background-color: #333; /* Slightly lighter on hover */
+}
+
+@media (max-width: 600px) {
+  .social-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .social-button img {
+    width: 20px;
+    margin-right: 8px;
+  }
+}

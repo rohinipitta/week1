@@ -1,0 +1,167 @@
+.step3-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh; /* Full height */
+    width: 100vw; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .spotify3-icon {
+    font-size: 120px; /* Increased the size */
+    color: #1DB954; /* Spotify green color */
+    margin-bottom: 20px; /* Space below the icon */
+    position: relative;
+    top: 0; /* Ensure the icon is not moved up */
+  }
+  
+/* Ensure the progress bar container has a defined height and width */
+.progress-bar3 {
+    width: 100%; /* Adjust width as needed */
+    max-width: 600px; /* Maximum width */
+    height: 2px; /* Set height to 2px */
+    background-color: #ddd; /* Background color of the bar */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the progress bar */
+  }
+  
+    .progress-bar-fill3 {
+        height: 100%; /* Fill the entire height */
+        background-color: #4CAF50; /* Progress bar fill color */
+        border-radius: 5px; /* Rounded corners */
+    }
+  
+  
+    
+
+  .step-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .step3-indicator img.back-arrow {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    margin-right: 10px;
+  }
+  
+  .step3-indicator span {
+    font-size: 15px;
+    font-weight: bold; /* Make the font bold */
+    font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+    color: white;
+  }
+  
+  
+  .step3 {
+    font-size: 20px; /* Adjust the size as needed */
+    font-weight: normal; /* Ensure the font is not bold */
+    font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+    color: dimgray;
+  }
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust margin as needed */
+    background-color: #282828; /* Darker background for container */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px; /* Adjust margin as needed */
+    width: 20px;
+    height: 20px;
+    border: 1px solid #505050; /* Border for checkbox */
+    border-radius: 3px;
+    appearance: none; /* Remove default browser styling */
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #1db954; /* Spotify green color for checked state */
+    border: 1px solid #1db954;
+}
+
+.checkbox-label {
+    color: #fff; /* White text color */
+    font-size: 14px; /* Adjust font size as needed */
+}
+.submit-button3 {
+    padding: 10px 90px;
+    background-color: #1ed760;
+    color: black;
+    margin-left: 300px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+   
+  }
+  
+  .submit-button3:hover {
+    background-color: #1db954;
+  }
+  
+
+  /* Responsive styles */
+@media (max-width: 600px) {
+    .step3-container {
+      padding: 10px;
+      font-size: 10px; /* Set font size to 10px for all elements within .step3-container */
+    }
+  
+    .spotify3-icon {
+      font-size: 80px; /* Adjust the size for smaller screens */
+      top: 0; /* Ensure the icon is not moved up */
+    }
+  
+    .progress-bar3 {
+      width: 100%; /* Full width on smaller screens */
+      max-width: 100%; /* Remove max-width constraint */}
+    
+  .step-indicator {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step-indicator img.back-arrow {
+    width: 20px; /* Adjust the size as needed for smaller screens */
+    height: 20px; /* Adjust the size as needed for smaller screens */
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .step-indicator span {
+    font-size: 10px; /* Ensure span font size is also 10px */
+    font-weight: bold; /* Ensure the font is bold */
+    font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+  }
+
+  .step3 {
+    font-size: 10px; /* Adjust the size as needed for smaller screens */
+    font-weight: normal; /* Ensure the font is not bold */
+    font-family: 'Arial', sans-serif; /* Use the same font family as signup.jsx */
+} 
+.submit-button3 {
+      position: relative;
+    padding: 8px 16px;
+    margin-left:-100px; /* Reset margin for smaller screens */
+    align-self: center; /* Center align on smaller screens */
+  }
+
+  #message {
+    font-size: 12px;
+  }
+
+  .checkbox-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .checkbox-container input[type='checkbox'] {
+    margin-right: 5px; /* Adjust the margin as needed */
+  }
+}
